@@ -1,0 +1,61 @@
+MIS versi 1.8 Update 22 September 2021
+
+* Grafik Transaksi Barang Keluar
+* Membuat tabel sirkulasi
+* Membuat tabel unit
+* Membuat Tabel penerima
+* Menambahkan menu sirkulasi pada sidebar admin
+* Menambahkan proses tambah sirkulasi
+
+Update 23 September 2021
+* Menambahkan kolom return_barang pada tabel sirkulasi
+* Membuat kondisi if pada action index sirkulasi
+
+Update 24 September
+* Menambahkan kolom invoice pada tabel sirkulasi
+* Membuat fitur multiple insert sirkulasi
+
+Update 25 September
+* Menambahkan kolom jumlah pada tabel sirkulasi
+* Menampilkan detail transaksi berdasarkan nomor invoice
+* Print detal transaksi berdasarkan nomor invoice
+* Kembalikan barang yang dipinjam
+* Histori transaksi pinjam barang
+
+Update 27 September
+* Menambahkan menu pegawai IAIN PSP
+* Menambahkan fitur tambah pegawai IAIN PSP
+* Menambahkan fitur edit pegawai IAIN PSP
+* Menambahkan fitur delete pegawai IAIN PSP
+* Menambahkan menu unit kerja
+* Menambahkan fitur tambah unit kerja
+* Menambahkan fitur edit unit kerja
+* Menambahkan fitur delete unit kerja
+
+Update 25 Oktober
+* Menambahkan note kode barang terakhir
+* Mengubah heading pada menu barang rusak
+
+***========================***===========================***
+
+MIS versi 1.9 Update 06 Desember 2021
+Update 06 Desember
+* Menambahkan fitur user akses
+* Membuat modul Management STM
+* Menambahkan CRUD bayar stm bulanan
+
+Update 07 Desember
+* Input serah terima STM
+* Print serah terima STM
+
+Update 08 Desember
+* Membuat model Management Infaq
+* Menambahkan CRUD setor infaq bulanan
+* Input serah dana infaq
+* Print serah dana infaq
+* Dashboard Infaq
+* Print laporan tahunan infaq
+* Print laporan serah stm filter berdasarkan bulan
+
+Update 13 Desember
+* Detail daftar serah infaq
