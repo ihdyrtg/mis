@@ -26,14 +26,14 @@
 
             <div class="row">
                 <!-- left column -->
-                <div class="col-md-12">
+                <div class="col-md-4">
                     <!-- jquery validation -->
                     <div class="card card-success">
                         <div class="card-header">
                             <!-- <h3 class="card-title"></h3> -->
                         </div>
                         <form action="<?php echo base_url('transaksi/actiontambah_bk'); ?>" method="post">
-                            <input type="hidden" name="id_pegawai" id="id_pegawai" value="<?php echo $this->uri->segment(3); ?>">
+                            <input type="hidden" name="id_pegawai" id="id_pegawai" value="<?php echo $this->uri->segment(4); ?>">
                             <div class="card-body">
                                 <table class="table table-sm table-bordered">
                                     <thead>
@@ -41,7 +41,7 @@
                                             <th>Kode Barang</th>
                                             <th>Jumlah</th>
                                             <th>Tanggal Keluar</th>
-                                            <th></th>
+                                            <th>Keterangan</th>
                                         </tr>
                                     </thead>
                                     <tbody class="formtambah">
@@ -49,6 +49,7 @@
                                             <td><input type="text" name="kode_barang[]" id="kode_barang[]" class="form-control"><?php echo form_error('kode_barang', '<small class="text-danger">', '</small>'); ?></td>
                                             <td><input type="text" name="jumlah[]" id="jumlah[]" class="form-control"></td>
                                             <td><input type="date" name="tanggal_keluar[]" id="tanggal_keluar[]" class="form-control"></td>
+                                            <td><input type="text" name="keterangan[]" id="keterangan[]" class="form-control"></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-sm bg-gradient-primary btnaddform"><i class="fa fa-plus"></i></button>
                                             </td>
@@ -63,7 +64,7 @@
                 </div>
                 <!--/.col (left) -->
                 <!-- right column -->
-                <div class="col-md-6">
+                <div class="col-md-4">
 
                 </div>
                 <!--/.col (right) -->

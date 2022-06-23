@@ -62,6 +62,11 @@
                                         <input type="date" class="form-control" name="tanggal_keluar" id="tanggal_keluar">
                                         <?php echo form_error('tanggal_keluar', '<small class="text-danger">', '</small>'); ?>
                                     </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="tanggal_keluar">Keterangan</label>
+                                        <input type="text" class="form-control" name="keterangan" id="keterangan">
+                                        <?php echo form_error('keterangan', '<small class="text-danger">', '</small>'); ?>
+                                    </div>
                                 </div>
                                 <button type="submit" class="btn bg-gradient-success">Tambah</button>
                             </div>

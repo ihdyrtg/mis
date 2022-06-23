@@ -43,6 +43,7 @@
                                         <th class="text-center">Pegawai</th>
                                         <th class="text-center">Unit</th>
                                         <th class="text-center">Jumlah</th>
+                                        <th class="text-center">Keterangan</th>
                                         <th class="text-center" width="50">#</th>
                                     </tr>
                                 </thead>
@@ -56,6 +57,7 @@
                                             <td><?php echo $bk['nama_pegawai']; ?></td>
                                             <td class="text-center"><?php echo $bk['nama_bagian']; ?></td>
                                             <td class="text-center"><?php echo $bk['jumlah']; ?> <?php echo $bk['satuan']; ?></td>
+                                            <td class="text-center"><?php echo $bk['keterangan']; ?></td>
                                             <td width="50">
                                                 <a href="<?php echo base_url('transaksi/edit_bk/' . $bk['id_keluar']); ?>" class="btn btn-sm bg-teal" data-toggle="tooltip" data-placement="top" title="edit">
                                                     <i class="fas fa-pen-square"></i>

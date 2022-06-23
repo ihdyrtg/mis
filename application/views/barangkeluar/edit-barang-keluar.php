@@ -53,6 +53,11 @@
                                         <input type="date" class="form-control" name="tanggal_keluar" id="tanggal_keluar" value="<?php echo $bkeluar['tanggal_keluar']; ?>">
                                         <?php echo form_error('tanggal_keluar', '<small class="text-danger">', '</small>'); ?>
                                     </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="keterangan">Keterangan</label>
+                                        <input type="text" class="form-control" name="keterangan" id="keterangan" value="<?php echo $bkeluar['keterangan']; ?>">
+                                        <?php echo form_error('keterangan', '<small class="text-danger">', '</small>'); ?>
+                                    </div>
                                 </div>
                                 <button type="submit" class="btn bg-gradient-success">Edit</button>
                                 <a href="<?php echo base_url('transaksi/bk'); ?>" class="btn bg-gradient-primary">Kembali</a>

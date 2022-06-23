@@ -366,6 +366,7 @@ class Transaksi extends CI_Controller
         $pegawai_id = $this->input->post('id_pegawai');
         $jumlah = $this->input->post('jumlah');
         $tanggal_keluar = $this->input->post('tanggal_keluar');
+        $keterangan = $this->input->post('keterangan');
 
         $jmldata = count($kode_barang);
 
@@ -374,7 +375,8 @@ class Transaksi extends CI_Controller
                 'barang_kode' => $kode_barang[$i],
                 'pegawai_id' => $pegawai_id,
                 'jumlah' => $jumlah[$i],
-                'tanggal_keluar' => $tanggal_keluar[$i]
+                'tanggal_keluar' => $tanggal_keluar[$i],
+                'keterangan' => $keterangan[$i]
             ]);
         }
 
@@ -404,6 +406,9 @@ class Transaksi extends CI_Controller
         ]);
         $this->form_validation->set_rules('tanggal_keluar', 'Tanggal Keluar', 'required', [
             'required' => 'Tanggal Keluar harus diisi!'
+        ]);
+        $this->form_validation->set_rules('keterangan', 'keterangan', 'required', [
+            'required' => 'keterangan harus diisi!'
         ]);
 
         if ($this->form_validation->run() == false) {
